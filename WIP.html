@@ -74,8 +74,9 @@
         }
 
         /* end of burger*/
+
         :root {
-            --bg-black: #001309;
+            --bg-black: #061D23;
             --text-white: #c8d48b;
         }
 
@@ -89,7 +90,6 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            text-align: center;
         }
 
         h1 {
@@ -127,44 +127,44 @@
 </body>
 
 <script>
-// Burger Button --------------------------------------------------------
-function toggleMenu() {
-    let menu = document.getElementById("sideMenu");
-    let main = document.getElementById("main");
+    // Burger Button --------------------------------------------------------
+    function toggleMenu() {
+        let menu = document.getElementById("sideMenu");
+        let main = document.getElementById("main");
 
-    if (menu.style.width === "250px") {
-        menu.style.width = "0";
-        main.style.marginLeft = "0";
-    } else {
-        menu.style.width = "250px";
-        main.style.marginLeft = "250px";
+        if (menu.style.width === "250px") {
+            menu.style.width = "0";
+            main.style.marginLeft = "0";
+        } else {
+            menu.style.width = "250px";
+            main.style.marginLeft = "250px";
+        }
     }
-}
 
-window.onclick = function (event) {
-    let menu = document.getElementById("sideMenu");
-    if (event.target !== menu && !menu.contains(event.target) && event.target.className !== "hamburger") {
-        menu.style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-    }
-};
-// End of Burger Button --------------------------------------------------------
+    window.onclick = function (event) {
+        let menu = document.getElementById("sideMenu");
+        if (event.target !== menu && !menu.contains(event.target) && event.target.className !== "hamburger") {
+            menu.style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    };
+    // End of Burger Button --------------------------------------------------------
 
-// Footer Logo -------------------------------------------------------- FIXED YESSSSS!!!!!!!!!
-document.addEventListener("DOMContentLoaded", function () {
-    const logo = document.getElementById('logo');
+    // Footer Logo -------------------------------------------------------- FIXED YESSSSS!!!!!!!!!
+    document.addEventListener("DOMContentLoaded", function () {
+        const logo = document.getElementById('logo');
 
-    if (logo) { 
-        logo.addEventListener("mouseenter", function () {
-            logo.src = "Images/boxopen.png"; 
-        });
+        if (logo) {
+            logo.addEventListener("mouseenter", function () {
+                logo.src = "Images/boxopen.png";
+            });
 
-        logo.addEventListener("mouseleave", function () {
-            logo.src = "Images/boxclose.png"; 
-        });
-    }
-});
-// End Footer Logo --------------------------------------------------------
+            logo.addEventListener("mouseleave", function () {
+                logo.src = "Images/boxclose.png";
+            });
+        }
+    });
+    // End Footer Logo --------------------------------------------------------
 </script>
 
 </html>
