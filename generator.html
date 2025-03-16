@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Generator</title>
+    <link rel="stylesheet" href="Generator/generator.css">
+</head>
+
+<body>
+    <!-- Hamburger Button -->
+    <div class="header">
+        <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+        POP Picker!
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for a series...">
+        <button onclick="searchItems()">🔍</button>
+    </div>
+
+    <!-- No Results Message -->
+    <p id="noResults" style="display: none; text-align: center; font-weight: bold; color: #0A2E36;">Not Added Yet :(</p>
+
+    <!-- Hamburger Side Menu -->
+    <div id="sideMenu" class="side-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="generator.html">Generator</a>
+        <a href="collection.html">Collections</a>
+
+        <!-- Footer Logo (FIXED) -->
+        <div class="footer" id="footer">
+            <img id="logo" src="Images/boxclose.png" alt="Closed Box">
+        </div>
+    </div>
+
+    <div id="categories"></div>
+
+    <button id="backToTop" onclick="scrollToTop()">⬆ Back to Top ⬆</button>
+
+</body>
+
+<script src="Generator/generator.js"></script>
+
+</html>

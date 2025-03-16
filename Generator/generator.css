@@ -1,0 +1,238 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #0A2E36;
+    margin: 0;
+    padding: 0;
+    background-color: #bceed6;
+}
+
+.header {
+    background-color: #01a78e;
+    color: mintcream;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+
+.header {
+    position: relative;
+    z-index: 100;
+}
+
+.side-menu {
+    z-index: 200;
+}
+
+/* Hamburger Button Start */
+.hamburger {
+    position: absolute;
+    left: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #018a76;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    padding-top: 60px;
+}
+
+.side-menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: mintcream;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    background-color: #0db59c;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#main {
+    transition: margin-left 0.3s ease;
+    padding: 16px;
+}
+
+/* Footer Styling */
+.footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #018a76;
+    width: 100%;
+    position: absolute;
+    margin-top: auto;
+}
+
+.footer img {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 370px;
+}
+
+.footer img:hover {
+    transform: scale(1.1);
+}
+
+/* end of burger*/
+
+/* Search Bar */
+.button-container .button {
+    width: auto; 
+    padding: 10px 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 400px;
+    position: relative;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #0000;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+#searchInput:focus {
+    border-color: #007d67;
+}
+
+.search-container button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #00a78e;
+    color: mintcream;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.search-container button:hover {
+    background: #007d67;
+}
+
+/*search bar end*/
+
+.controls-container {
+    display: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+/* refresh */
+.refresh-button {
+    background-color: #01a78e;
+    color: mintcream;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px auto;
+    display: block;
+    font-size: 16px;
+}
+
+.refresh-button:hover {
+    background-color: #00796B;
+}
+/* end refresh*/
+
+/* main */
+.category {
+    margin: 20px;
+    padding: 10px;
+    background: mintcream;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category h2 {
+    color: #00a78e;
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #0A2E36;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card.flipped {
+    background-color: #afe4dc;
+}
+/* end main */
+
+/* Button for Back to Top */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00a78e;
+    color: mintcream;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #007d67;
+    transform: scale(1.1);
+}

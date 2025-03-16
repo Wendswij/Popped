@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Collections</title>
+    <link rel="stylesheet" href="Collection/collection.css">
+</head>
+
+<body>
+
+    <!-- Hamburger Button -->
+    <div class="header">
+        <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+        POP Collection!
+    </div>
+
+    <!-- Hamburger Side Menu -->
+    <div id="sideMenu" class="side-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="generator.html">Generator</a>
+        <a href="collection.html">Collections</a>
+
+        <!-- Footer Logo (FIXED) -->
+        <div class="footer" id="footer">
+            <img id="logo" src="Images/boxclose.png" alt="Closed Box">
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="collection-page" style="font-size: 25px;">
+            <h2>My Collection</h2>
+            <button class="save-btn" onclick="saveChecklist()">Save Collection</button>
+        </div>
+        <div id="checklist"></div>
+
+        <button id="backToTop" onclick="scrollToTop()">⬆ Back to Top ⬆</button>
+
+    </div>
+
+</body>
+
+<script src="Collection/collection.js"></script>
+
+</html>

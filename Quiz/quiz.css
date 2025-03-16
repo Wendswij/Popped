@@ -1,0 +1,151 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #0A2E36;
+    margin: 0;
+    padding: 0;
+    background-color: #bceed6;
+}
+
+.header {
+    background-color: #01a78e;
+    color: mintcream;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+
+.header {
+    position: relative;
+    z-index: 100;
+}
+
+.side-menu {
+    z-index: 200;
+}
+
+/* Hamburger Button Start */
+.hamburger {
+    position: absolute;
+    left: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #018a76;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    padding-top: 60px;
+}
+
+.side-menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: mintcream;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    background-color: #0db59c;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#main {
+    transition: margin-left 0.3s ease;
+    padding: 16px;
+}
+
+/* Footer Styling */
+.footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #018a76;
+    width: 100%;
+    position: absolute;
+    margin-top: auto;
+}
+
+.footer img {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 370px;
+}
+
+.footer img:hover {
+    transform: scale(1.1);
+}
+
+/* end of burger*/
+
+
+/* Main Quiz */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: #00a78e;
+    color: mintcream;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+button:hover {
+    background: #01ebc8;
+}
+
+/* Quiz Container */
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    background: mintcream;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container {     /* #OVERLAPPED */ /* FIXED!!!!! */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.button-container .button {
+    width: auto;
+    padding: 10px 20px;
+}
+
+.gamble-container {
+    text-align: center;
+    display: none;
+}
+
+.gamble-button {
+    display: inline-block;
+    width: 70%;
+    margin-top: 5px;
+}

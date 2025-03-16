@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="Quiz/quiz.css">
+</head>
+
+<body>
+
+    <!-- Hamburger Button -->
+    <div class="header">
+        <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+        POP Quiz!
+    </div>
+
+    <!-- Hamburger Side Menu -->
+    <div id="sideMenu" class="side-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="generator.html">Generator</a>
+        <a href="collection.html">Collections</a>
+
+        <!-- Footer Logo (FIXED) -->
+        <div class="footer" id="footer">
+            <img id="logo" src="Images/boxclose.png" alt="Closed Box">
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div id="quiz-container"></div>
+
+        <div class="button-container">
+            <button class="button" onclick="location.href='index.html'">Home Page</button>
+            <button class="button" onclick="window.location.reload()">Restart</button>
+        </div>
+    </div>
+
+    <div class="gamble-container">
+        <button class="gamble-button" onclick="location.href='generator.html'">Want to gamble on which Series to buy of Your Character?</button>
+    </div>
+
+</body>
+
+<script src="Quiz/quiz.js"></script>
+
+</html>
